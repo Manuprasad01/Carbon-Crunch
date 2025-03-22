@@ -1,4 +1,4 @@
-#Carbon Crunch Web Application
+<font style="bold" size="32">Carbon Crunch Web Application</font>
 <br>
 <br>
 <br>
