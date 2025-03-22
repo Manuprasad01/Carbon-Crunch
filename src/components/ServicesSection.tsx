@@ -2,6 +2,7 @@
 // import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import image2 from '../assets/image2.png'
 
 const serviceVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -21,13 +22,13 @@ const ServicesSection = () => {
       id: 1,
       title: 'GHG Accounting',
       description: 'We provide GHG accounting services, measuring and reporting Scope 1, 2, and 3 emissions. Our process ensures compliance and helps organizations track and reduce their carbon footprint.',
-      image: '/images/image2.png'
+      image: {image2}
     },
     {
       id: 2,
       title: 'GHG Accounting',
       description: 'We provide GHG accounting services, measuring and reporting Scope 1, 2, and 3 emissions. Our process ensures compliance and helps organizations track and reduce their carbon footprint.',
-      image: '/images/image2.png'
+      image: {image2}
     }
   ];
 
@@ -42,7 +43,7 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="relative">
             <motion.img 
-              src="/images/image2.png"
+              src={image2}
               alt="Computer showing carbon data"
               className="w-full max-w-md mx-auto object-contain"
               initial={{ opacity: 0, scale: 0.95 }}

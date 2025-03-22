@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // import { motion } from 'framer-motion';
 import { cn } from '../lib/utils';
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +26,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <div className="w-8 h-8 overflow-hidden rounded-full">
             <img 
-              src="/images/logo.png" 
+              src={logo}
               alt="Carboncrunch Logo" 
               className="w-full h-full object-cover"
             />

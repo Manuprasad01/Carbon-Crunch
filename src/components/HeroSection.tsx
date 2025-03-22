@@ -2,6 +2,7 @@
 import  { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import image1 from '../assets/image1.png'
 
 const HeroSection = () => {
   const imageRef = useRef<HTMLImageElement>(null);
@@ -71,11 +72,11 @@ const HeroSection = () => {
           >
             <div 
               className="blur-load relative rounded-xl overflow-hidden shadow-xl"
-              style={{ backgroundImage: "url('/images/image1.png')" }}
+              style={{ backgroundImage: `url( ${image1})`}}
             >
               <img 
                 ref={imageRef}
-                src="/images/image1.png" 
+                src={image1} 
                 alt="Sprouting plant representing carbon footprint reduction" 
                 className="w-full h-auto object-cover rounded-xl hero-image"
               />
